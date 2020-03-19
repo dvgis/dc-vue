@@ -1,29 +1,19 @@
 # vue-cesium
 
-## Project setup
+> 框架采用最新的 Cesium 框架，将 Viewer 设置到全局变量
 
-```
-yarn install
-```
+## 启动
 
-### Compiles and hot-reloads for development
-
-```
-yarn serve
+```node
+yarn run serve
 ```
 
-### Compiles and minifies for production
+## 打包
 
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
+```node
+yarn run build
 ```
 
-### Customize configuration
+## 配置说明
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> 请看 vue.config.js
