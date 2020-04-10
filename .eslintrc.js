@@ -30,6 +30,7 @@ module.exports = {
     echarts: false,
     axios: false,
     Cesium: false,
+    DC: false,
     '%=': false
   },
   parserOptions: {

@@ -1,5 +1,5 @@
 {
-  "name": "vue-cesium",
+  "name": "vue-dc",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "cesium": "^1.67.0",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",
     "vue": "^2.6.11",

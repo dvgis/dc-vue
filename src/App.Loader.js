@@ -2,10 +2,9 @@
  * @Author: Caven
  * @Date: 2020-03-19 22:36:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-03-19 22:50:30
+ * @Last Modified time: 2020-04-10 20:31:39
  */
 import Vue from 'vue'
-import 'cesium/Widgets/widgets.css'
 
 const hub = new Vue()
 class AppLoader {
@@ -20,7 +19,6 @@ class AppLoader {
 
   install() {
     global.Vue = Vue
-    global.Cesium = require('cesium/Cesium')
     return Promise.all([import('@/components')])
   }
 }

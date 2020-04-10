@@ -1,6 +1,6 @@
-# vue-cesium
+# vue-dc
 
-> 框架采用最新的 Cesium 框架，将 Viewer 设置到全局变量
+> 该脚手架是将 Vue 与 DC-SDK 结合，方便用户可以快速搭建 3DGis 项目
 
 ## 启动
 

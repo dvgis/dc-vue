@@ -2,13 +2,11 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-03-19 22:43:09
+ * @Last Modified time: 2020-04-10 20:33:09
  */
 'use strict'
 const path = require('path')
-const cesiumBuild = './node_modules/cesium/Build/Cesium'
 const webpack = require('webpack')
-const CopywebpackPlugin = require('copy-webpack-plugin')
 
 let resolve = dir => {
   return path.resolve(__dirname, dir)
@@ -27,7 +25,10 @@ module.exports = {
   },
   chainWebpack: config => {
     config.resolve.extensions.add('.js').add('.vue')
-    config.resolve.alias.set('cesium', path.resolve(__dirname, cesiumBuild))
+    config.resolve.alias.set(
+      'dc',
+      path.resolve(__dirname, './public/libs/dc-sdk')
+    )
     config.module
       .rule('images')
       .test(/\.(png|jpe?g|gif)(\?.*)?$/)
@@ -66,23 +67,5 @@ module.exports = {
         symbolId: 'icon-[name]'
       })
       .end()
-
-    config.plugin('copy').use(CopywebpackPlugin, [
-      [
-        { from: path.join(cesiumBuild, 'Workers'), to: 'resources/Workers' },
-        { from: path.join(cesiumBuild, 'Assets'), to: 'resources/Assets' },
-        { from: path.join(cesiumBuild, 'Widgets'), to: 'resources/Widgets' },
-        {
-          from: path.join(cesiumBuild, 'ThirdParty'),
-          to: 'resources/ThirdParty'
-        }
-      ]
-    ])
-
-    config
-      .plugin('define')
-      .use(webpack.DefinePlugin, [
-        { CESIUM_BASE_URL: JSON.stringify('./resources/') }
-      ])
   }
 }
