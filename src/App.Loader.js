@@ -2,9 +2,13 @@
  * @Author: Caven
  * @Date: 2020-03-19 22:36:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-04-10 20:31:39
+ * @Last Modified time: 2020-04-22 14:18:07
  */
 import Vue from 'vue'
+
+import 'dc/dc.core.min'
+// import 'dc/plugins/dc.plugins.min'
+import 'dc/dc.core.min.css'
 
 const hub = new Vue()
 class AppLoader {
@@ -19,6 +23,7 @@ class AppLoader {
 
   install() {
     global.Vue = Vue
+
     return Promise.all([import('@/components')])
   }
 }

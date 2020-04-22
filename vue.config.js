@@ -2,11 +2,10 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-04-10 20:33:09
+ * @Last Modified time: 2020-04-22 14:11:06
  */
 'use strict'
 const path = require('path')
-const webpack = require('webpack')
 
 let resolve = dir => {
   return path.resolve(__dirname, dir)
