@@ -1,0 +1,16 @@
+{
+  "url": {
+    "server": "",
+    "resource": ""
+  },
+
+  "maps": [
+    {
+      "type": "",
+      "url": "",
+      "name": "",
+      "iconUrl": "",
+      "subdomains": []
+    }
+  ]
+}
