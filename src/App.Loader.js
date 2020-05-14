@@ -2,13 +2,13 @@
  * @Author: Caven
  * @Date: 2020-03-19 22:36:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-05-08 10:18:24
+ * @Last Modified time: 2020-05-14 11:42:46
  */
 import Vue from 'vue'
-import 'dvgis/dc.base.min'
-import 'dvgis/dc.core.min'
-import 'dvgis/plugins/dc.plugins.min'
-import 'dvgis/dc.core.min.css'
+import 'dvgis/dc-sdk/dist/dc.base.min'
+import 'dvgis/dc-sdk/dist/dc.core.min'
+import 'dvgis/dc-plugins/dist/dc.plugins.min'
+import 'dvgis/dc-sdk/dist/dc.core.min.css'
 
 const hub = new Vue()
 

@@ -2,13 +2,13 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-05-07 14:48:54
+ * @Last Modified time: 2020-05-14 11:41:20
  */
 'use strict'
 const path = require('path')
 
 const CopywebpackPlugin = require('copy-webpack-plugin')
-const dvgisDist = './node_modules/@dvgis/dc-sdk/dist/dc-sdk'
+const dvgis = './node_modules/@dvgis'
 
 let resolve = dir => {
   return path.resolve(__dirname, dir)
@@ -27,7 +27,7 @@ module.exports = {
   },
   chainWebpack: config => {
     config.resolve.extensions.add('.js').add('.vue')
-    config.resolve.alias.set('dvgis', path.resolve(__dirname, dvgisDist))
+    config.resolve.alias.set('dvgis', path.resolve(__dirname, dvgis))
     config.module
       .rule('images')
       .test(/\.(png|jpe?g|gif)(\?.*)?$/)
@@ -70,7 +70,7 @@ module.exports = {
     config.plugin('copy').use(CopywebpackPlugin, [
       [
         {
-          from: path.join(dvgisDist, 'resources'),
+          from: path.join(dvgis, 'dc-sdk/dist/resources'),
           to: 'libs/dc-sdk/resources'
         }
       ]
