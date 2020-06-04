@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-05-14 11:41:20
+ * @Last Modified time: 2020-06-04 09:10:30
  */
 'use strict'
 const path = require('path')
@@ -70,8 +70,13 @@ module.exports = {
     config.plugin('copy').use(CopywebpackPlugin, [
       [
         {
+          from: path.join(__dirname, 'public'),
+          to: path.join(__dirname, 'dist'),
+          ignore: ['index.html']
+        },
+        {
           from: path.join(dvgis, 'dc-sdk/dist/resources'),
-          to: 'libs/dc-sdk/resources'
+          to: path.join(__dirname, 'dist', 'libs/dc-sdk/resources')
         }
       ]
     ])
