@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2020-03-19 22:17:28
  * @Last Modified by: Caven
- * @Last Modified time: 2020-05-07 19:27:13
+ * @Last Modified time: 2020-07-15 18:07:37
  */
 
 const componentsWatcher = scaner => {
@@ -21,3 +21,7 @@ const vueScaner = require.context(
   /^\.\/((?!\/)[\s\S])+\/index\.vue$/
 )
 componentsWatcher(vueScaner)
+
+const svgWatcher = scaner => scaner.keys().map(scaner)
+const svgScaner = require.context('@/assets/svg/icons', false, /\.svg$/)
+svgWatcher(svgScaner)
