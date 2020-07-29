@@ -1014,10 +1014,17 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@dvgis/dc-sdk@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-1.8.0.tgz#8a397c58f7d2b0c50e6232947b9597ada64717e2"
-  integrity sha512-BH+6RPcZzefgpD20oxleJTdAk1PulQaq4gdGHA3t7fMwNuaJDqKlOYkAM3Seh2h7Gp8daJ/mEL31bE1z02rgOA==
+"@dvgis/dc-plugins@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@dvgis/dc-plugins/-/dc-plugins-1.4.2.tgz#a029fc18518e56991634973804a53a2b4d68411f"
+  integrity sha512-e/92VVYFG+N6j//cPeLJy7nd10vaRSaL7tnyDVp99BpYxpKy6MQMb2bgUjhz3IZfe4k9pHkrUXKywZZExmsQ4A==
+  dependencies:
+    heatmap.js "^2.0.5"
+
+"@dvgis/dc-sdk@^1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-1.8.3.tgz#6e4fa9c5dfda881c60c87c06fd12496e9dddd788"
+  integrity sha512-uTpFzB3DaKDK6OQv6qUY7SlDTppbHPU1LePT9jd0uPyq91awAWDJPBWENJAc7oK/35MHNhDLyXgMy3pnzlppSg==
   dependencies:
     cesium "^1.71.0"
 
@@ -4356,6 +4363,11 @@ he@1.2.x, he@^1.1.0, he@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+heatmap.js@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/heatmap.js/-/heatmap.js-2.0.5.tgz#466d3b86513f5d49112a49d25700ab2730149153"
+  integrity sha1-Rm07hlE/XUkRKknSVwCrJzAUkVM=
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
