@@ -3,9 +3,9 @@
  * @Date: 2020-03-19 22:17:28
  */
 
-const componentsWatcher = scaner => {
-  scaner.keys().map(key => {
-    let name = scaner(key).default.name
+const componentsWatcher = scanner => {
+  scanner.keys().map(key => {
+    let name = scanner(key).default.name
     if (name) {
       Vue.component(name, function(resolve) {
         require([key + ''], resolve)
@@ -13,13 +13,13 @@ const componentsWatcher = scaner => {
     }
   })
 }
-const vueScaner = require.context(
+const vueScanner = require.context(
   '@/components',
   true,
   /^\.\/((?!\/)[\s\S])+\/index\.vue$/
 )
-componentsWatcher(vueScaner)
+componentsWatcher(vueScanner)
 
-const svgWatcher = scaner => scaner.keys().map(scaner)
-const svgScaner = require.context('@/assets/svg/icons', false, /\.svg$/)
-svgWatcher(svgScaner)
+const svgWatcher = scanner => scanner.keys().map(scanner)
+const svgScanner = require.context('@/assets/svg/icons', false, /\.svg$/)
+svgWatcher(svgScanner)
