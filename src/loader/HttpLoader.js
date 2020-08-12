@@ -1,9 +1,8 @@
-/*
+/**
  * @Author: Caven
- * @Date: 2019-10-12 12:48:10
- * @Last Modified by: Caven
- * @Last Modified time: 2020-05-08 10:25:44
+ * @Date: 2019-10-12 19:50:10
  */
+
 import axios from 'axios'
 
 const instance = axios.create({

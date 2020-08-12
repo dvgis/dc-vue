@@ -1,9 +1,8 @@
-/*
+/**
  * @Author: Caven
- * @Date: 2019-10-12 12:48:10
- * @Last Modified by: Caven
- * @Last Modified time: 2020-07-15 18:12:36
+ * @Date: 2019-10-12 19:48:10
  */
+
 class ConfigLoader {
   load() {
     global.Http.get('config/config.json')

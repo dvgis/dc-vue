@@ -1,8 +1,6 @@
-/*
+/**
  * @Author: Caven
  * @Date: 2020-03-19 22:17:28
- * @Last Modified by: Caven
- * @Last Modified time: 2020-07-15 18:07:37
  */
 
 const componentsWatcher = scaner => {
