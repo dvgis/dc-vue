@@ -9,7 +9,7 @@
         }
       }
     ],
-    "@babel/preset-stage-2"
+    "@vue/cli-plugin-babel/preset"
   ],
   "plugins": ["@babel/plugin-transform-runtime"]
 }
