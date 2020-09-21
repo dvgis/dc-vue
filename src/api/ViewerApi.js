@@ -4,12 +4,12 @@
  */
 
 class ViewerApi {
-  constructor() {
-    this._viewer = undefined
+  constructor(viewer) {
+    this._viewer = viewer
   }
 
-  set viewer(viewer) {
-    this._viewer = viewer
+  get viewer() {
+    return this._viewer
   }
 }
 

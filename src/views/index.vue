@@ -11,8 +11,7 @@ export default {
   components: {},
   methods: {
     viewerCompletedHandler(viewer) {
-      global.viewerApi = new ViewerApi()
-      global.viewerApi.viewer = viewer
+      global.viewerApi = new ViewerApi(viewer)
     }
   }
 }
