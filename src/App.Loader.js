@@ -4,10 +4,10 @@
  */
 
 import Vue from 'vue'
-import 'dvgis/dc-sdk/dist/dc.base.min'
-import 'dvgis/dc-sdk/dist/dc.core.min'
+import DC from 'dvgis/dc-sdk/dist/dc.base.min'
+import DcCore from 'dvgis/dc-sdk/dist/dc.core.min'
+import DcPlugins from 'dvgis/dc-plugins/dist/dc.plugins.min'
 import 'dvgis/dc-sdk/dist/dc.core.min.css'
-import 'dvgis/dc-plugins/dist/dc.plugins.min'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -26,6 +26,9 @@ class AppLoader {
 
   install() {
     global.Vue = Vue
+    global.DC = DC
+    DC.use(DcCore)
+    DC.use(DcPlugins)
     return Promise.all([
       import('@/components'),
       import('@/loader/HttpLoader'),

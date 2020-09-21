@@ -882,19 +882,19 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@dvgis/dc-plugins@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@dvgis/dc-plugins/-/dc-plugins-1.6.0.tgz#2acf330352bf534e35ea177363b5761fe2d30fe2"
-  integrity sha512-udsFIBnwsDodRzvRD6Kk3DAdhamkbQ9kX4NgYAUzda9MKf2buRFelc8Kd/6qbiBwv5OJjJjUmk0c+Cl/bi88pA==
+"@dvgis/dc-plugins@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@dvgis/dc-plugins/-/dc-plugins-1.7.0.tgz#1a0b94fd208f3282b9ee49691e80b92c8a5ceb76"
+  integrity sha512-mNg56YYiCJIx+KGHEKWnTdNt2tz+csUhvujzYWYMLhpChyny8QdoMxEI4QYXwOXqdDbr5jfvOq8N9Fsi6oyr5w==
   dependencies:
     heatmap.js "^2.0.5"
 
-"@dvgis/dc-sdk@^1.9.1":
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-1.9.1.tgz#f7bea361e14d398ad0b8cf81229bc78012a3adc5"
-  integrity sha512-s+H7Wb14M/NGgcw47zDcYXUTXfL70UnzR3P3IyyGkF49zG0x0dh6ChrF+EXb5W+VGwBwVSlOxIGOHG/WAWbh8g==
+"@dvgis/dc-sdk@^1.10.2":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-1.10.2.tgz#7a27f17807c603173c69b60455fdc33b983f563b"
+  integrity sha512-2KzTaLI/MJMsQmIDL/AvErsWPu+dHAn9VZz5R1imUk6GVRf6fQWxhT2q6aG/2amFmqH9FoPg8mXIFc768UHXJg==
   dependencies:
-    cesium "^1.72.0"
+    cesium "^1.73.0"
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -2176,10 +2176,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cesium@^1.72.0:
-  version "1.72.0"
-  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.72.0.tgz#dee5da9bfe7313226b6f91dfd8de1541bdc59026"
-  integrity sha512-7m3ITPlEx868+KgT9fVtpCW6gKoPJmNNvU/JxgPIGwwP1gY0dRttog6I4Sfq/j+e+cOtLTmCvN11qtYEuFpGmQ==
+cesium@^1.73.0:
+  version "1.73.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.73.0.tgz#49f49363c7a669d75810d4ea66e7a87423884978"
+  integrity sha512-HqvxPbCEsE1Szdm5qPIrBNjHG2cJ9Xk5uYMELmG0GuBL/sYaQ/0IMton43LUBY4E/wblRivNo1Vz7tIQweraFw==
 
 chalk@^1.1.3:
   version "1.1.3"
