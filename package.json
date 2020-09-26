@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@dvgis/dc-plugins": "^1.7.0",
-    "@dvgis/dc-sdk": "^1.10.2",
+    "@dvgis/dc-sdk": "^1.10.3",
+    "@dvgis/dc-ui": "^1.0.0-Beta",
     "axios": "^0.19.0",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",

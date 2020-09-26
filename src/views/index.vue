@@ -1,6 +1,14 @@
 <template>
   <div class="index">
-    <viewer @on-viewer-completed="viewerCompletedHandler"></viewer>
+    <dc-viewer
+      viewer-id="viewer-container"
+      @on-viewer-created="viewerCreatedHandler"
+    >
+      <dc-base-layer
+        layer-type="google"
+        :options="{ style: 'img' }"
+      ></dc-base-layer>
+    </dc-viewer>
   </div>
 </template>
 
@@ -10,7 +18,7 @@ export default {
   name: 'Index',
   components: {},
   methods: {
-    viewerCompletedHandler(viewer) {
+    viewerCreatedHandler(viewer) {
       global.viewerApi = new ViewerApi(viewer)
     }
   }
