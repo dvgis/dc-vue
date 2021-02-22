@@ -5,8 +5,8 @@
       @on-viewer-created="viewerCreatedHandler"
     >
       <dc-base-layer
-        layer-type="google"
-        :options="{ style: 'img' }"
+        layer-type="amap"
+        :options="{ style: 'img', crs: 'WGS84' }"
       ></dc-base-layer>
     </dc-viewer>
   </div>

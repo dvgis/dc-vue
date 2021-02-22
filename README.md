@@ -1,4 +1,4 @@
-# vue-dc
+# dc-vue
 
 > 该脚手架是将 Vue 与 DC-SDK 结合，方便用户可以快速搭建 3DGis 项目
 
