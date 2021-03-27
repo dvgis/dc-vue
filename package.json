@@ -17,8 +17,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@dvgis/dc-plugins": "^1.11.0",
-    "@dvgis/dc-sdk": "^1.15.1",
+    "@dvgis/dc-sdk": "^2.0.0",
     "@dvgis/dc-ui": "^1.0.0-Beta",
     "axios": "^0.21.1",
     "core-js": "^3.6.4",

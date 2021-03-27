@@ -29,8 +29,7 @@ module.exports = {
       .add('.js')
       .add('.vue')
       .end()
-      .alias.set('dvgis', path.resolve(__dirname, dvgisDist))
-      .end()
+
     config.module
       .rule('images')
       .test(/\.(png|jpe?g|gif)(\?.*)?$/)

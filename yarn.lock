@@ -836,19 +836,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@dvgis/dc-plugins@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@dvgis/dc-plugins/-/dc-plugins-1.11.0.tgz#080f2425d586a1147ab7a3ea341d0d3994a141c2"
-  integrity sha512-eR4NoeVKyvn1FUZdfOURvNBpkq4iO7zPArnUtNxkHvIY+6b9PLakDR3i0RwQyb4N9iHeyvfSEjlE1SmzkdRwLw==
-  dependencies:
-    heatmap.js "^2.0.5"
-
-"@dvgis/dc-sdk@^1.15.1":
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-1.15.1.tgz#cde1b4bbc32148f81bc071a8624f3dd49d000382"
-  integrity sha512-JXgf1WUs0P4eZtSXzlqPsq/qNwKe4toC7ReYWa3vMYNGKCE35QU5e5YcmCuAlOL/RK0iAqmit3NGsDq4TmKumg==
-  dependencies:
-    cesium "^1.78.0"
+"@dvgis/dc-sdk@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-2.0.0.tgz#04338a873484163062dad271654cab4174316390"
+  integrity sha512-GA6PTouxPMWBaSK+UoUA4MKDS+jIJ3u2JU1yQFjIocoKM7p/txU7VBEQR00KycwPx4X1sCeVOQT/qiuI0QQHhA==
 
 "@dvgis/dc-ui@^1.0.0-Beta":
   version "1.0.0-Beta"
@@ -2173,11 +2164,6 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
-
-cesium@^1.78.0:
-  version "1.78.0"
-  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.78.0.tgz#e152b1c9e1e1d75ad2880a743e7d2b337b4bfdb1"
-  integrity sha512-ulEILDn0G2czV7CONX0IGMUqcaH3igBkZ/1pXBTQldANw9ntxaWjF3F6IzP1MOY2lZtvEdsroYB30ML9SDRSBg==
 
 chalk@^1.1.3:
   version "1.1.3"
@@ -4205,11 +4191,6 @@ he@1.2.x, he@^1.1.0, he@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
-
-heatmap.js@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/heatmap.js/-/heatmap.js-2.0.5.tgz#466d3b86513f5d49112a49d25700ab2730149153"
-  integrity sha1-Rm07hlE/XUkRKknSVwCrJzAUkVM=
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
