@@ -1,14 +1,6 @@
 <template>
   <div class="index">
-    <dc-viewer
-      viewer-id="viewer-container"
-      @on-viewer-created="viewerCreatedHandler"
-    >
-      <dc-base-layer
-        layer-type="amap"
-        :options="{ style: 'img', crs: 'WGS84' }"
-      ></dc-base-layer>
-    </dc-viewer>
+    <viewer @on-viewer-completed="viewerCompletedHandler"></viewer>
   </div>
 </template>
 
@@ -18,8 +10,9 @@ export default {
   name: 'Index',
   components: {},
   methods: {
-    viewerCreatedHandler(viewer) {
+    viewerCompletedHandler(viewer) {
       global.viewerApi = new ViewerApi(viewer)
+      global.viewerApi.addBaseLayer()
     }
   }
 }
