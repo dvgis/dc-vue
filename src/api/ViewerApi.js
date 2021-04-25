@@ -17,6 +17,7 @@ class ViewerApi {
       style: 'img'
     })
     this._viewer.addBaseLayer(baidu)
+    return this
   }
 }
 

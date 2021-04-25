@@ -1,5 +1,7 @@
 <template>
-  <div id="viewer-container" class="viewer-container"></div>
+  <div id="viewer-container" class="viewer-container">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
