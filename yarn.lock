@@ -865,10 +865,10 @@
     "@babel/helper-validator-identifier" "^7.12.11"
     to-fast-properties "^2.0.0"
 
-"@dvgis/dc-sdk@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-2.1.4.tgz#491194fe0f6d6b8b330037a29fb3aa729125a373"
-  integrity sha512-TP8D0chyArFxnhDu6B1ZqtBSPdUZKdZvXMd9ntYofk8Pt2yE52qv4Xz+6purd5Vj1CsgGu+Cz5DMxNsuJ0LUQw==
+"@dvgis/dc-sdk@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@dvgis/dc-sdk/-/dc-sdk-2.2.0.tgz#31021642e11f915d3897cad8b4d6d57286b92e5a"
+  integrity sha512-wOMdKCZMrYdEF8TmBK8M+gzFSXP+7Ni0baiArpG2CK1xxR/YIHbMQ1VqM0HPeeo8FAR6U92Y6Ohe0dUmpPz6gg==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
