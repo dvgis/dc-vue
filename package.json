@@ -1,7 +1,7 @@
 {
   "name": "dc-vue",
   "version": "0.1.0",
-  "repository": "https://github.com/dvgis/vue-dc.git",
+  "repository": "https://github.com/dvgis/dc-vue.git",
   "keywords": [
     "3D",
     "webgl",

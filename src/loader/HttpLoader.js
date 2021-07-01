@@ -42,5 +42,4 @@ function initInterceptors(instance) {
   )
 }
 
-const httpLoader = new HttpLoader()
-export default httpLoader
+export default HttpLoader

@@ -3,14 +3,26 @@
  * @Date: 2020-03-19 22:35:48
  */
 
-import appLoader from './App.Loader'
+import Vue from 'vue'
+import axios from 'axios'
+import { DcLoader, HttpLoader, UiLoader } from './loader'
 ;(async () => {
-  let loaders = await appLoader.install()
-  for (let i = 0; i < loaders.length; i++) {
-    let loader = loaders[i].default
-    if (!loader || !loader.load) continue
-    await loader.load()
-  }
+  const hub = new Vue()
+  Vue.config.productionTip = false
+  global.Vue = Vue
+  Vue.prototype.$hub = hub
+
+  await axios.get('config/config.json').then(res => {
+    global.Config = res.data
+  })
+
+  await new Promise(resolve => {
+    new DcLoader().load()
+    new HttpLoader().load()
+    new UiLoader().load()
+    import('@/components')
+    resolve()
+  })
 
   Promise.all([
     import('./App.vue'),

@@ -4,13 +4,13 @@
 
 ## 启动
 
-```node
+```shell
 yarn run serve
 ```
 
 ## 打包
 
-```node
+```shell
 yarn run build
 ```
 

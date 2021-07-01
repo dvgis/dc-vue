@@ -73,8 +73,7 @@ module.exports = {
       [
         {
           from: path.join(__dirname, 'public'),
-          to: path.join(__dirname, 'dist'),
-          ignore: ['index.html']
+          to: path.join(__dirname, 'dist')
         },
         {
           from: path.join(dvgisDist, 'dc-sdk/dist/resources'),
