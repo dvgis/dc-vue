@@ -2,6 +2,8 @@
   "name": "dc-vue",
   "version": "0.1.0",
   "repository": "https://github.com/dvgis/dc-vue.git",
+  "homepage": "https://www.dvgis.cn",
+  "author": "Caven Chen <cavencj@gmail.com>",
   "keywords": [
     "3D",
     "webgl",
