@@ -17,7 +17,7 @@ export default {
     }
   },
   mounted() {
-    DC.ready(this.initViewer)
+    DC.ready().then(this.initViewer)
   }
 }
 </script>
